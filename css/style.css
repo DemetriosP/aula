@@ -1,98 +1,116 @@
+body {
+  background-color: #2e2e2e;
+}
+
 body,
 ul,
 li,
 p {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    font-family: Arial, cursive, "Times Roman";
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+  font-family: "Orbitron", "Montserrat", sans-serif;
+  letter-spacing: 1px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  font-family: "AmazDoom";
+  letter-spacing: 2px;
 }
 
 h1 {
-    text-align: center;
-    margin-top: 100px;
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  font-size: 100px;
+  font-family: "AmazDooM";
+  letter-spacing: 4px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .header {
-    background: rgb(255, 236, 61, 0.4);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 10px;
+  background: #89181a;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  font-family: "AmazDoom";
+  letter-spacing: 2px;
+  height: 28px;
 }
 
 .menu {
-    display: flex;
+  display: flex;
 }
 
 .menu li {
-    margin-left: 20px;
-    align-items: center;
+  margin-left: 20px;
+  align-items: center;
 }
 
 .grid2 div img {
-    width: 100%;
+  width: 100%;
 }
 
 .grid2 div p {
-    padding: 10px;
-    font-size: 0.5em;
-}
-
-.grid2 {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    grid-gap: 20px;
-    max-width: 800px;
-    padding: 10px;
-    margin: 0 auto;
-}
-
-.grid2filha > div {
-    margin-bottom: 10px;
+  padding: 10px;
+  font-size: 0.5em;
 }
 
 .footer {
-    text-align: right;
-    font-size: 0.5em;
+  text-align: right;
+  font-size: 0.5em;
 }
 
-@media (max-width: 600px) {
-    .grid2 {
-        grid-template-columns: 1fr;
-    }
+.grid2 img {
+  max-width: 500px;
+  width: auto;
+  height: auto;
+}
 
-    .grid2filha {
-        display: flex;
-        overflow: scroll;
-    }
+.grid2 p {
+  max-width: 500px;
+  width: auto;
+  height: auto;
+}
 
-    .grid2filha > div {
-        flex: 1 0 200px;
-        margin: 0 auto;
-    }
+.tabela {
+  table-layout: auto;
+  text-align: center;
+  border-collapse: collapse;
+  width: auto;
+  height: auto;
+}
 
-    .grid1filha {
-        grid-column: 1;
-        grid-row: 3 / 4;
-        border-top: 10px solid tomato;
-        border-bottom: 10px solid tomato;
-        text-align: justify;
-    }
+caption {
+  line-height: 100px;
+}
 
-    div.grid1filha > p {
-        font-family: "Dancing Script", cursive;
-    }
+tfoot {
+  text-align: left;
+}
 
-    .grid2filha div p {
-        background: tomato;
-        color: white;
-        margin: 10px;
-        text-align: center;
-    }
+td {
+  border-style: solid;
+  border-color: rgb(150, 2, 2);
+}
+
+th {
+  border-style: solid;
+  border-color: rgb(150, 2, 2);
+}
+
+.rodape {
+  border-style: none;
 }
